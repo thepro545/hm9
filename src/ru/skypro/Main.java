@@ -25,9 +25,4 @@ public class Main {
         alchemist.setPublishingYear(1990);
         System.out.println("alchemist.getpublishingYear() = " + alchemist.getpublishingYear());
     }
-
-
-
-
-
 }
