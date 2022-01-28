@@ -1,12 +1,14 @@
 package ru.skypro;
 
 public class Author {
-    private String name;
-    private String lastName;
+    public static String fullName;
+    private final String name;
+    private final String lastName;
 
-    public  Author (String name, String lastName){
+    public Author (String name, String lastName){
         this.name = name;
         this.lastName = lastName;
+        String fullName = name + " " + lastName;
     }
     public String getName(){
         return name;
