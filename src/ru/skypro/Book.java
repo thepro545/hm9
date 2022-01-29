@@ -4,7 +4,7 @@ public class Book {
 
     private final String bookName;
     private int publishingYear;
-    private Author fullName;
+    private final Author fullName;
 
     public Book(String bookName, Author fullName, int publishingYear) {
         this.bookName = bookName;
@@ -12,7 +12,7 @@ public class Book {
         this.publishingYear = publishingYear;
     }
 
-    public String getbookName() {
+    public String getBookName() {
         return bookName;
     }
 
@@ -20,7 +20,7 @@ public class Book {
         return fullName;
     }
 
-    public int getpublishingYear() {
+    public int getPublishingYear() {
         return publishingYear;
     }
 

@@ -1,7 +1,6 @@
 package ru.skypro;
 
 public class Author {
-    public static String fullName;
     private final String name;
     private final String lastName;
 
