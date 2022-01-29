@@ -2,22 +2,24 @@ package ru.skypro;
 
 public class Book {
 
-    private String bookName;
+    private final String bookName;
     private int publishingYear;
     private Author fullName;
 
-    public Book(String bookName, String fullName, int publishingYear){
+    public Book(String bookName, Author fullName, int publishingYear) {
         this.bookName = bookName;
-        Author.fullName = fullName;
+        this.fullName = fullName;
         this.publishingYear = publishingYear;
     }
 
     public String getbookName() {
         return bookName;
     }
-    public String getAuthorName() {
-        return Author.fullName;
+
+    public Author getAuthorName() {
+        return fullName;
     }
+
     public int getpublishingYear() {
         return publishingYear;
     }
